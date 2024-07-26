@@ -2,12 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f0f2f5;
     color: #333;
 }
 
 header {
-    background-color: #0073b1;
+    background-color: #1f2a44;
     color: white;
     padding: 20px 0;
     text-align: center;
@@ -26,38 +26,57 @@ header .title {
 
 .contact-info {
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-.contact-info p, .social-links {
+.contact-info p {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin: 5px 0;
+    margin: 0;
 }
 
-.contact-info i, .social-links i {
+.contact-info i {
     margin-right: 8px;
 }
 
-.contact-info a, .social-links a {
+.contact-info a {
     color: white;
     text-decoration: none;
-    margin-left: 5px;
 }
 
-.contact-info a:hover, .social-links a:hover {
+.contact-info a:hover {
     text-decoration: underline;
 }
 
 .social-links {
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-.social-links a {
-    display: inline-flex;
+.social-links .btn {
+    display: flex;
     align-items: center;
-    margin: 0 10px;
-    font-size: 1.2em;
+    background-color: #1f2a44;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-links .btn i {
+    margin-right: 8px;
+}
+
+.social-links .btn:hover {
+    background-color: white;
+    color: #1f2a44;
 }
 
 main {
@@ -73,7 +92,7 @@ section {
 }
 
 section h2 {
-    color: #0073b1;
+    color: #1f2a44;
     margin-top: 0;
 }
 
@@ -84,7 +103,7 @@ section h2 {
 }
 
 .skills span {
-    background-color: #0073b1;
+    background-color: #1f2a44;
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
@@ -96,7 +115,7 @@ section ul {
 }
 
 section ul li {
-    background: none; /* Remover imagem de fundo */
-    padding-left: 0; /* Remover o padding adicional */
+    background: none;
+    padding-left: 0;
     margin-bottom: 10px;
 }
