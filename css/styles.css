@@ -18,22 +18,35 @@ header h1 {
     font-size: 2.5em;
 }
 
-header p {
+header .title {
     margin: 5px 0;
     font-size: 1.2em;
+    font-weight: bold;
 }
 
 .contact-info {
     margin-top: 10px;
 }
 
-.contact-info p {
+.contact-info p, .social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 5px 0;
 }
 
-.contact-info a {
+.contact-info i, .social-links i {
+    margin-right: 8px;
+}
+
+.contact-info a, .social-links a {
     color: white;
     text-decoration: none;
+    margin-left: 5px;
+}
+
+.contact-info a:hover, .social-links a:hover {
+    text-decoration: underline;
 }
 
 .social-links {
@@ -41,15 +54,10 @@ header p {
 }
 
 .social-links a {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     margin: 0 10px;
-    color: white;
-    text-decoration: none;
     font-size: 1.2em;
-}
-
-.social-links a:hover {
-    text-decoration: underline;
 }
 
 main {
@@ -67,6 +75,19 @@ section {
 section h2 {
     color: #0073b1;
     margin-top: 0;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills span {
+    background-color: #0073b1;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
 }
 
 section ul {
