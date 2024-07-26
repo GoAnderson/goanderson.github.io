@@ -36,6 +36,22 @@ header p {
     text-decoration: none;
 }
 
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
 main {
     padding: 20px;
 }
